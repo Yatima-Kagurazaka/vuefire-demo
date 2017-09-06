@@ -6,8 +6,8 @@
     "public": "public",
     "rewrites": [
       {
-        "source": "**",
-        "function": "index"
+        "source": "/user",
+        "destination": "/index.html"
       }
     ]
   }
