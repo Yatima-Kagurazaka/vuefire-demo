@@ -6,7 +6,7 @@
     "public": "public",
     "rewrites": [
       {
-        "source": "/user",
+        "source": "/us/er",
         "destination": "/index.html"
       }
     ]
