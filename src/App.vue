@@ -22,6 +22,13 @@ body {
     </ul>
   </div>
   <div v-else></div>
+  <div>
+    <ul>
+      <li v-for="oooo in ooooo">
+          {{oooo.text}}
+      </li>
+    </ul>
+  </div>
 </div>
 </template>
 
@@ -32,6 +39,7 @@ const auth = firebase.auth()
 const db = firebase.database()
 
 const todosRef = db.ref('todos')
+const oooooRef = db.ref('ooooo')
 
 export default {
   data() {
@@ -49,7 +57,8 @@ export default {
     }
   },
   firebase: {
-    todos: todosRef
+    todos: todosRef,
+    ooooo: oooooRef
   },
   mounted() {
     auth.onAuthStateChanged(user => {
